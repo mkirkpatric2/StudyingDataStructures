@@ -22,7 +22,7 @@ This file contains a simple implementation of a circular linked list. Besides li
 
 #### 4_TwoWayCircularFixedQuantity.c
 
-My goal was to create a fixed-quantity circular linked list. My intent is to port this to /game/ as a save-state management method. In each entry, I'll include compressed data reflecting game-state changes [method tbd]. Each turn, an entry will be updated and the marker moved around the circle. After reaching the desired number, 10 for this exercise, subsequent entries will override the next entry in the list. Ultimately, the list needs to be able to be read LIFO.  
+My goal was to create a fixed-quantity circular linked list. My intent is to port this to /game/ as a save-state management method. In each entry, I'll include compressed data reflecting game-state changes [method tbd]. Each turn, an entry will be updated and the marker moved around the circle. After reaching the desired number, 10 for this exercise, subsequent entries will override the next entry in the list. 
 
 As each entry will reflect a "turn," the goal is for the data to enable backwards replay. Upon reaching a fail-state, the player will have an option to "rewind" upon which the state will revert by undoing the actions contianed in the data on each entry [down the road: including visual represnetation of each rewound turn]. 
 
@@ -42,9 +42,9 @@ Sorts arrays of integers.
 My first attempt at writing a selection sort function. 
 
 Sorts arrays of integers from low to high.
- 
 
-#### quickSort.h 
+
+### quickSort.h 
 
 My first attempt at writing a quicksort algorithm without looking for help was pretty close, but I made new arrays after every sort around a pivot. As a result, I struggled to put them all back together [sic - I failed to] and the function was memory inefficient. 
 
